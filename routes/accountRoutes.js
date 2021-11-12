@@ -23,6 +23,10 @@ router.get("/create", async (req, res) => {
     res.render("account-create" );
 });
 
+router.get("/login", async (req, res) => {
+    res.render("login" );
+});
+
 router.get("/view/:id", async (req, res) => {
     res.send("View " + req.params.id);
 });
